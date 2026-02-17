@@ -28,6 +28,7 @@ const App: React.FC = () => {
     <Layout>
       <Suspense fallback={<LoadingFallback />}>
         <AnimatePresence mode="wait">
+          {/* @ts-expect-error - key is required for AnimatePresence but not in RoutesProps definition */}
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
