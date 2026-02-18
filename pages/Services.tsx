@@ -59,11 +59,11 @@ const Services: React.FC = () => {
                         {service.id === 'infra' && <Construction size={32} />}
                         {service.id === 'hiring' && <Truck size={32} />}
                       </div>
-                      <h2 className="text-4xl md:text-6xl font-black uppercase">{service.title}</h2>
+                      <h2 className="text-3xl md:text-6xl font-black uppercase">{service.title}</h2>
                     </div>
-                    
+
                     <div className="w-full h-[2px] bg-white/5 mb-12 relative overflow-hidden">
-                      <motion.div 
+                      <motion.div
                         initial={{ left: '-100%' }}
                         whileInView={{ left: '0%' }}
                         transition={{ duration: 1, delay: 0.2 }}
@@ -119,11 +119,11 @@ const Services: React.FC = () => {
                         </ul>
                       </div>
                     </div>
-                    
+
                     <div className="aspect-video bg-[#111] overflow-hidden group">
-                      <img 
-                        src={service.image || `https://picsum.photos/seed/${service.id}service/1200/600`} 
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" 
+                      <img
+                        src={service.image || `https://picsum.photos/seed/${service.id}service/1200/600`}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
                       />
                     </div>
                   </motion.div>
@@ -137,8 +137,8 @@ const Services: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <h2 className="text-4xl md:text-6xl font-black uppercase mb-12">Our <span className="text-[#febd17]">Fleet</span></h2>
-                  
+                  <h2 className="text-3xl md:text-6xl font-black uppercase mb-12">Our <span className="text-[#febd17]">Fleet</span></h2>
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-1 px-1 bg-white/5 border border-white/5">
                     {FLEET.map((item, idx) => (
                       <div key={idx} className="bg-[#0a0a0a] p-8 flex justify-between items-center group">

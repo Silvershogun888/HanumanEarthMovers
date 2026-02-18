@@ -48,7 +48,7 @@ const Home: React.FC = () => {
 
         <div className="container mx-auto px-6 relative z-20">
           <div className="max-w-4xl">
-            <h1 className="text-6xl md:text-8xl font-black uppercase mb-8 leading-[0.9]">
+            <h1 className="text-4xl sm:text-5xl md:text-8xl font-black uppercase mb-8 leading-[0.9]">
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
