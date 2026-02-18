@@ -115,6 +115,16 @@ export const HIRING_ASSETS = [
     image: "https://i.imgur.com/Dg8179p.jpeg",
     name: "Front End Loader",
     description: "Versatile loaders for material handling, truck loading, and site cleanup."
+  },
+  {
+    image: "https://i.imgur.com/bKaNczb.jpeg",
+    name: "Specialized Machinery",
+    description: "High-performance equipment for specialized construction and mining tasks."
+  },
+  {
+    image: "https://i.imgur.com/bKd3fl6.jpeg",
+    name: "Heavy Transport",
+    description: "Reliable transport solutions for heavy equipment and logistical support."
   }
 ];
 
