@@ -100,6 +100,21 @@ export const HIRING_ASSETS = [
     image: "https://i.imgur.com/6rAIqvw.jpeg",
     name: "Vibratory Soil Compactors",
     description: "High-capacity compactors designed for maximum soil stabilization and asphalt durability in large-scale infrastructure projects."
+  },
+  {
+    image: "https://i.imgur.com/KGGy3QP.jpeg",
+    name: "Heavy Duty Dozer",
+    description: "Robust bulldozers for efficient land clearing and heavy earth moving operations."
+  },
+  {
+    image: "https://i.imgur.com/sV3fkwN.jpeg",
+    name: "Articulated Dump Truck",
+    description: "High-capacity articulated dump trucks for transporting materials across rough terrain."
+  },
+  {
+    image: "https://i.imgur.com/Dg8179p.jpeg",
+    name: "Front End Loader",
+    description: "Versatile loaders for material handling, truck loading, and site cleanup."
   }
 ];
 
