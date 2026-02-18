@@ -28,12 +28,12 @@ const Home: React.FC = () => {
       <section className="relative h-screen overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-10" />
-          <motion.img 
+          <motion.img
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}
-            src="https://picsum.photos/seed/hanumanhero/1920/1080" 
-            className="w-full h-full object-cover grayscale brightness-50"
+            src="https://i.imgur.com/sDDGtt4.png"
+            className="w-full h-full object-cover"
           />
           {/* Blueprint Line Overlays */}
           <div className="absolute inset-0 pointer-events-none opacity-20">
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6 relative z-20">
           <div className="max-w-4xl">
             <h1 className="text-6xl md:text-8xl font-black uppercase mb-8 leading-[0.9]">
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
               >
                 Building
               </motion.span>
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
               >
                 Heavy Duty
               </motion.span>
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
               </motion.span>
             </h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
@@ -84,7 +84,7 @@ const Home: React.FC = () => {
               A leading results-driven investment group specializing in Agribusiness, Infrastructure, and heavy-duty Earth Moving projects across India, USA, and Africa.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.8 }}
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 text-gray-500"
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
               { label: 'Global Offices', value: 3 },
               { label: 'Team Members', value: 100 }
             ].map((stat, i) => (
-              <motion.div 
+              <motion.div
                 key={stat.label}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -160,8 +160,8 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {SERVICES.map((service, i) => (
-              <Link 
-                key={service.id} 
+              <Link
+                key={service.id}
                 to={service.id === 'hiring' ? '/hiring' : (service.id === 'agri' ? '/agri' : (service.id === 'infra' ? '/infrastructure' : `/services#${service.id}`))}
                 className="group"
               >
@@ -249,7 +249,7 @@ const Home: React.FC = () => {
             {/* Structural grid lines */}
             <div className="absolute top-0 left-1/4 w-[1px] h-full bg-white/5" />
             <div className="absolute top-0 right-1/4 w-[1px] h-full bg-white/5" />
-            
+
             <h2 className="text-4xl md:text-6xl font-black uppercase mb-8 relative z-10">
               Ready to <span className="text-[#febd17]">Modernize</span><br />Your Operations?
             </h2>
