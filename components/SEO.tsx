@@ -12,7 +12,7 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({ title, description, keywords, image, url }) => {
     const siteName = "Hanuman Earth Movers & Construction Ltd";
     const fullTitle = `${title} | ${siteName}`;
-    const siteUrl = "https://hanumanearthmovers.vercel.app"; // Fallback URL
+    const siteUrl = "https://hanumanearthmovers.com"; // Primary Custom Domain
 
     return (
         <Helmet>

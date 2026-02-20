@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hanumanearthmovers.vercel.app/sitemap.xml
+Sitemap: https://hanumanearthmovers.com/sitemap.xml
