@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Construction, HardHat, Pickaxe, MapPin } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
+import SEO from '../components/SEO';
 import { INFRA_ASSETS } from '../constants';
 import LiquidButton from '../components/LiquidButton';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,12 @@ import { Link } from 'react-router-dom';
 const Infra: React.FC = () => {
   return (
     <SteelWipe>
+      <SEO
+        title="Infrastructure Development"
+        description="Expert infrastructure development in Zambia. Specializing in road construction, substation preparation, and large-scale civil engineering earthworks using heavy-duty fleet."
+        keywords="Infrastructure development Zambia, Road construction, Substation preparation Solwezi, Civil engineering Zambia, Earthworks experts"
+        url="/infrastructure"
+      />
       <section className="pt-40 pb-20 bg-[#0a0a0a]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mb-24">
@@ -40,10 +46,10 @@ const Infra: React.FC = () => {
                 className="group border border-white/5 bg-[#111] overflow-hidden"
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
-                  <img 
-                    src={asset.image} 
-                    alt={asset.name} 
-                    className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
+                  <img
+                    src={asset.image}
+                    alt={asset.name}
+                    className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
                   <div className="absolute bottom-6 left-6 flex items-center gap-3">
@@ -78,31 +84,31 @@ const Infra: React.FC = () => {
       <section className="py-32 bg-[#050505] border-y border-white/5">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-             <div>
-               <h2 className="text-4xl font-black uppercase mb-8">Uncompromising <span className="text-[#febd17]">Execution</span></h2>
-               <div className="space-y-6">
-                 {[
-                   "Advanced Earthmoving Simulations",
-                   "GPS-Guided Grading Accuracy",
-                   "Rapid Fleet Mobilization",
-                   "Environmental Impact Mitigation"
-                 ].map((text, i) => (
-                   <div key={i} className="flex items-center gap-4">
-                     <div className="w-6 h-[1px] bg-[#febd17]" />
-                     <span className="text-gray-400 uppercase text-xs font-bold tracking-widest">{text}</span>
-                   </div>
-                 ))}
-               </div>
-             </div>
-             <div className="bg-[#111] p-12 border border-white/5 relative">
-               <div className="absolute top-0 right-0 p-4 opacity-10">
-                 <Pickaxe size={80} className="text-[#febd17]" />
-               </div>
-               <p className="text-gray-400 leading-relaxed mb-8 italic">
-                 "Our infrastructure division is built on the philosophy that every road, foundation, and trench is a legacy project. We utilize the latest from CAT, Komatsu, and JCB to ensure deadlines are met without sacrificing structural integrity."
-               </p>
-               <div className="text-sm font-black uppercase text-white tracking-widest">— Technical Operations Team</div>
-             </div>
+            <div>
+              <h2 className="text-4xl font-black uppercase mb-8">Uncompromising <span className="text-[#febd17]">Execution</span></h2>
+              <div className="space-y-6">
+                {[
+                  "Advanced Earthmoving Simulations",
+                  "GPS-Guided Grading Accuracy",
+                  "Rapid Fleet Mobilization",
+                  "Environmental Impact Mitigation"
+                ].map((text, i) => (
+                  <div key={i} className="flex items-center gap-4">
+                    <div className="w-6 h-[1px] bg-[#febd17]" />
+                    <span className="text-gray-400 uppercase text-xs font-bold tracking-widest">{text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="bg-[#111] p-12 border border-white/5 relative">
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                <Pickaxe size={80} className="text-[#febd17]" />
+              </div>
+              <p className="text-gray-400 leading-relaxed mb-8 italic">
+                "Our infrastructure division is built on the philosophy that every road, foundation, and trench is a legacy project. We utilize the latest from CAT, Komatsu, and JCB to ensure deadlines are met without sacrificing structural integrity."
+              </p>
+              <div className="text-sm font-black uppercase text-white tracking-widest">— Technical Operations Team</div>
+            </div>
           </div>
         </div>
       </section>
@@ -111,10 +117,10 @@ const Infra: React.FC = () => {
       <section className="py-32 relative">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto p-16 border border-[#febd17]/20 relative">
-             <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#febd17]" />
-             <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#febd17]" />
-             <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#febd17]" />
-             <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#febd17]" />
+            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#febd17]" />
+            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#febd17]" />
+            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#febd17]" />
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#febd17]" />
 
             <h2 className="text-4xl md:text-6xl font-black uppercase mb-8">Build for <span className="text-[#febd17]">Stability</span></h2>
             <p className="text-gray-400 mb-12">

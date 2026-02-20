@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Tractor, Sprout, Droplets, Mountain } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
+import SEO from '../components/SEO';
 import { AGRI_ASSETS } from '../constants';
 import LiquidButton from '../components/LiquidButton';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,12 @@ import { Link } from 'react-router-dom';
 const Agri: React.FC = () => {
   return (
     <SteelWipe>
+      <SEO
+        title="Agri Infrastructure"
+        description="Specialized agribusiness infrastructure development in Zambia. We provide bush clearance, land preparation, and irrigation systems for large-scale agricultural projects."
+        keywords="Agribusiness infrastructure Zambia, Bush clearance, Land preparation, Irrigation systems installation, Central Pivots, Hanuman Earth Movers Agri"
+        url="/agri"
+      />
       <section className="pt-40 pb-20 bg-[#0a0a0a]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mb-24">
@@ -40,10 +46,10 @@ const Agri: React.FC = () => {
                 className="group border border-white/5 bg-[#111] overflow-hidden"
               >
                 <div className="aspect-[16/10] overflow-hidden relative">
-                  <img 
-                    src={asset.image} 
-                    alt={asset.name} 
-                    className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" 
+                  <img
+                    src={asset.image}
+                    alt={asset.name}
+                    className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
                   <div className="absolute bottom-6 left-6 flex items-center gap-3">
@@ -98,10 +104,10 @@ const Agri: React.FC = () => {
       <section className="py-32 relative">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto p-16 border border-[#febd17]/20 relative">
-             <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#febd17]" />
-             <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#febd17]" />
-             <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#febd17]" />
-             <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#febd17]" />
+            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#febd17]" />
+            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#febd17]" />
+            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#febd17]" />
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#febd17]" />
 
             <h2 className="text-4xl md:text-6xl font-black uppercase mb-8">Modernize Your <span className="text-[#febd17]">Yield</span></h2>
             <p className="text-gray-400 mb-12">

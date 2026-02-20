@@ -1,10 +1,10 @@
-
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 // Add Truck to the imports from lucide-react
 import { HardHat, Tractor, Construction, ArrowRight, Gauge, Truck } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
 import LiquidButton from '../components/LiquidButton';
+import SEO from '../components/SEO';
 import { SERVICES, PROJECTS, FLEET } from '../constants';
 import { Link } from 'react-router-dom';
 
@@ -24,6 +24,12 @@ const Home: React.FC = () => {
 
   return (
     <SteelWipe>
+      <SEO
+        title="Home"
+        description="Hanuman Earth Movers specializes in large scale earth moving, agribusiness projects, and infrastructure development in Zambia, India, and USA. Established leaders in agricultural land preparation and heavy equipment hiring."
+        keywords="Hanuman Earth Movers, Earthmoving equipment Zambia, Agribusiness projects Africa, Infrastructure development Zambia, Bush Clearance, Land Preparation"
+        url="/"
+      />
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">

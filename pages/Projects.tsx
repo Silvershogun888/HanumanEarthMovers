@@ -1,20 +1,26 @@
-
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Layers } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
+import SEO from '../components/SEO';
 import { PROJECTS } from '../constants';
 import LiquidButton from '../components/LiquidButton';
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<'All' | 'Agri' | 'Infrastructure' | 'Energy'>('All');
 
-  const filteredProjects = filter === 'All' 
-    ? PROJECTS 
+  const filteredProjects = filter === 'All'
+    ? PROJECTS
     : PROJECTS.filter(p => p.category === filter);
 
   return (
     <SteelWipe>
+      <SEO
+        title="Projects"
+        description="Browse our portfolio of successful agribusiness and infrastructure projects across Zambia, including collaborations with Mansa Sugar, ZESCO, and Sterling & Wilson."
+        keywords="Hanuman Earth Movers projects, Mansa Sugar Chembe, Sterling and Wilson solar plant, Zambia infrastructure case studies, Agribusiness development portfolio"
+        url="/projects"
+      />
       <section className="pt-40 pb-32 bg-[#0a0a0a]">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
@@ -35,11 +41,10 @@ const Projects: React.FC = () => {
                 <button
                   key={f}
                   onClick={() => setFilter(f as any)}
-                  className={`px-6 py-2 text-[10px] uppercase font-bold tracking-[0.2em] border transition-all ${
-                    filter === f 
-                      ? 'bg-[#febd17] text-black border-[#febd17]' 
+                  className={`px-6 py-2 text-[10px] uppercase font-bold tracking-[0.2em] border transition-all ${filter === f
+                      ? 'bg-[#febd17] text-black border-[#febd17]'
                       : 'border-white/10 text-gray-500 hover:border-[#febd17]/50'
-                  }`}
+                    }`}
                 >
                   {f}
                 </button>
@@ -49,7 +54,7 @@ const Projects: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <AnimatePresence mode='wait'>
-              <motion.div 
+              <motion.div
                 key={filter}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -65,15 +70,15 @@ const Projects: React.FC = () => {
                     className="relative h-[600px] group overflow-hidden border border-white/5 bg-[#111]"
                   >
                     {/* Background Image */}
-                    <img 
-                      src={project.image} 
-                      alt={project.client} 
+                    <img
+                      src={project.image}
+                      alt={project.client}
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${project.id}/800/600`;
                       }}
                     />
-                    
+
                     {/* Dark Overlay Gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent transition-opacity duration-500 group-hover:opacity-80" />
 
@@ -90,11 +95,11 @@ const Projects: React.FC = () => {
                         <div className="w-4 h-[1px] bg-[#febd17]" />
                         <span className="text-[10px] text-[#febd17] font-bold uppercase tracking-widest">{project.location}</span>
                       </div>
-                      
+
                       <h3 className="text-4xl font-black text-white uppercase mb-6 leading-none">
                         {project.client}
                       </h3>
-                      
+
                       <p className="text-gray-300 mb-8 leading-relaxed text-sm max-w-md line-clamp-2 transition-all group-hover:line-clamp-none">
                         {project.description}
                       </p>
@@ -122,7 +127,7 @@ const Projects: React.FC = () => {
       <section className="py-32 border-t border-white/5 bg-[#050505]">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 bg-[#111] p-12 relative overflow-hidden border border-white/5">
-             {/* Industrial Accents */}
+            {/* Industrial Accents */}
             <div className="absolute top-0 right-0 p-4 opacity-10">
               <Layers size={100} className="text-[#febd17]" />
             </div>

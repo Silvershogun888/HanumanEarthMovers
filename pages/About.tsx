@@ -1,13 +1,19 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Target, Users, History, ShieldCheck } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
+import SEO from '../components/SEO';
 import { QUALITY_PILLARS } from '../constants';
 
 const About: React.FC = () => {
   return (
     <SteelWipe>
+      <SEO
+        title="About Us"
+        description="Hanuman Earth Movers & Construction Ltd is an India and USA-based investment group established in 2013, specializing in agribusiness and infrastructure in Zambia."
+        keywords="Hanuman Earth Movers legacy, Construction experts Zambia, Mr. G. Sravan, Mr. B. Chaitanya, Mr. G. Anudeep Reddy, Agriculture infrastructure development"
+        url="/about"
+      />
       {/* Intro */}
       <section className="pt-40 pb-20 bg-[#0a0a0a]">
         <div className="container mx-auto px-6">
@@ -32,7 +38,7 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="relative">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 className="border-4 border-[#febd17] p-4"

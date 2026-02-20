@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Tractor, Construction, Truck, HardHat, Pickaxe, Settings, ArrowRight } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
+import SEO from '../components/SEO';
 import { SERVICES, FLEET } from '../constants';
 import LiquidButton from '../components/LiquidButton';
 import { Link } from 'react-router-dom';
@@ -19,6 +19,12 @@ const Services: React.FC = () => {
 
   return (
     <SteelWipe>
+      <SEO
+        title="Services"
+        description="Comprehensive earthmoving and construction services in Zambia. From heavy equipment hiring (Excavators, Graders, TLBs) to bush clearance and road construction."
+        keywords="Equipment hiring Zambia, Heavy machinery Solwezi, Bush clearance, Road construction Zambia, Hanuman Earth Movers"
+        url="/services"
+      />
       <section className="pt-40 pb-20 bg-[#0a0a0a]">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">

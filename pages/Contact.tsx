@@ -1,13 +1,19 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock, Send, Navigation2, ExternalLink } from 'lucide-react';
 import SteelWipe from '../components/SteelWipe';
 import LiquidButton from '../components/LiquidButton';
+import SEO from '../components/SEO';
 
 const Contact: React.FC = () => {
   return (
     <SteelWipe>
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Hanuman Earth Movers & Construction Ltd. Offices in Lusaka, Solwezi, and Kitwe. Reach out for equipment hiring, sales, or project quotes."
+        keywords="Hanuman Earth Movers contact, Lusaka office, Solwezi branch, Kitwe branch, Zambia construction contact"
+        url="/contact"
+      />
       <section className="pt-40 pb-32 bg-[#0a0a0a]">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
@@ -22,7 +28,7 @@ const Contact: React.FC = () => {
                 <span className="text-[#febd17] font-bold uppercase tracking-widest text-sm">Get In Touch</span>
               </motion.div>
               <h1 className="text-5xl md:text-7xl font-black uppercase mb-12 leading-none">Start Your <span className="text-[#febd17]">Project</span></h1>
-              
+
               <div className="space-y-12">
                 {[
                   { icon: <MapPin className="text-[#febd17]" />, title: 'Head Office', value: 'Plot No: 2279, Opp Northmead Police post, Great East Road, Lusaka' },
@@ -30,7 +36,7 @@ const Contact: React.FC = () => {
                   { icon: <Mail className="text-[#febd17]" />, title: 'Email Support', value: 'hanumanmachines@gmail.com' },
                   { icon: <Clock className="text-[#febd17]" />, title: 'Business Hours', value: 'Mon - Fri: 08:00 - 17:00' }
                 ].map((item, idx) => (
-                  <motion.div 
+                  <motion.div
                     key={idx}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -72,7 +78,7 @@ const Contact: React.FC = () => {
             >
               <div className="absolute top-0 left-0 w-2 h-2 bg-[#febd17]" />
               <div className="absolute top-0 right-0 w-2 h-2 bg-[#febd17]" />
-              
+
               <h2 className="text-3xl font-black uppercase mb-12">Request <span className="text-[#febd17]">Quote</span></h2>
               <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -85,7 +91,7 @@ const Contact: React.FC = () => {
                     <input type="text" className="w-full bg-[#0a0a0a] border border-white/10 px-4 py-4 focus:outline-none focus:border-[#febd17] transition-all text-sm" placeholder="Industrial Corp" />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase font-bold tracking-widest text-gray-500">Email Address</label>
                   <input type="email" className="w-full bg-[#0a0a0a] border border-white/10 px-4 py-4 focus:outline-none focus:border-[#febd17] transition-all text-sm" placeholder="john@example.com" />
@@ -129,12 +135,12 @@ const Contact: React.FC = () => {
           referrerPolicy="no-referrer-when-downgrade"
           title="Hanuman Earth Movers Lusaka Office"
         ></iframe>
-        
+
         {/* Custom Place Card Overlay */}
         <div className="absolute top-10 left-10 z-20 max-w-sm w-full bg-[#111] p-8 border border-white/10 shadow-2xl backdrop-blur-md bg-opacity-95">
           <div className="absolute top-0 left-0 w-2 h-2 bg-[#febd17]" />
           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#febd17]" />
-          
+
           <div className="flex items-start justify-between mb-8">
             <div>
               <div className="flex items-center gap-2 mb-3">
@@ -145,7 +151,7 @@ const Contact: React.FC = () => {
               <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest">& Construction Ltd</p>
             </div>
           </div>
-          
+
           <div className="space-y-6 mb-10 border-t border-white/5 pt-6">
             <div className="flex items-start gap-4">
               <MapPin size={16} className="text-[#febd17] mt-1 flex-shrink-0" />
@@ -162,33 +168,33 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-             <a 
-               href="https://www.google.com/maps/dir/?api=1&destination=-15.4153751,28.2738797" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="flex items-center justify-center gap-2 bg-[#febd17] text-black py-4 text-[10px] font-black uppercase tracking-widest hover:bg-white transition-colors"
-             >
-               <Navigation2 size={14} /> Directions
-             </a>
-             <a 
-               href="https://www.google.com/maps/search/?api=1&query=-15.4153751,28.2738797" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               className="flex items-center justify-center gap-2 border border-white/20 text-white py-4 text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-colors"
-             >
-               <ExternalLink size={14} /> View Large
-             </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=-15.4153751,28.2738797"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#febd17] text-black py-4 text-[10px] font-black uppercase tracking-widest hover:bg-white transition-colors"
+            >
+              <Navigation2 size={14} /> Directions
+            </a>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=-15.4153751,28.2738797"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 border border-white/20 text-white py-4 text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-colors"
+            >
+              <ExternalLink size={14} /> View Large
+            </a>
           </div>
         </div>
-        
+
         {/* Structural Blueprint Grid Overlay (Light) */}
         <div className="absolute inset-0 pointer-events-none z-10 opacity-5">
-           <svg width="100%" height="100%" className="absolute inset-0">
-             <pattern id="map-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-               <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" strokeWidth="0.5" />
-             </pattern>
-             <rect width="100%" height="100%" fill="url(#map-grid)" />
-           </svg>
+          <svg width="100%" height="100%" className="absolute inset-0">
+            <pattern id="map-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" strokeWidth="0.5" />
+            </pattern>
+            <rect width="100%" height="100%" fill="url(#map-grid)" />
+          </svg>
         </div>
       </section>
     </SteelWipe>
